@@ -14,8 +14,8 @@
     <div class="container">
       <ul>
         <li class="logo">Sunshine Hotel</li>
-        <li><a class="nav-btn" href="data.php">Home</a></li>
-        <li><a href="add-room.php" class="nav-btn active">Bedroom</a></li>
+        <li><a class="nav-btn" href="index.php">Home</a></li>
+        <li><a href="bedroom.php" class="nav-btn active">Bedroom</a></li>
         <li style="float: inline-end">
           <a href="data.php" class="nav-btn" style="
             border-radius: 8px;

@@ -2,16 +2,12 @@
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    // Debug: Menampilkan id yang diterima
-  
-
-    // Buka file.txt dan cari data sesuai id
     $file_path = "file.txt";
    
     if (file_exists($file_path)) {
         $file = fopen($file_path, "r");
         $found = false;
-        // Debug: Menampilkan isi file
+       
 
         $lines = file($file_path);
 
@@ -19,20 +15,17 @@ if (isset($_GET['id'])) {
         while ($isi = fgets($file)) {
             $pindah = preg_replace("/;/", "", $isi);
             $pisah = explode("|", $isi);
-            // Debug: Menampilkan setiap baris data yang dipeca
-
+            
             if ($pisah[0] == $id) {
                 $hotel_name = trim($pisah[1]);
                 $room_type = trim($pisah[2]);
-                $location = trim($pisah[3]);
-                $price = trim($pisah[4]);
+                $location = trim($pisah[4]);
+                $price = trim($pisah[3]);
                 $found = true;
                 break;
             }
         }
         fclose($file);
-
-        // Jika data ditemukan, tampilkan informasi reservasi
         if ($found) {
             ?>
             <!DOCTYPE html>
@@ -89,7 +82,7 @@ if (isset($_GET['id'])) {
                         class="harga"
                         style="color: red; font-size: 17px; margin-top: 20px"
                       >
-                        <?php echo "Rp.$price;" ?>
+                        <?php echo "Rp.$price" ?>
                       </div>
                     </div>
                     <div class="form">
