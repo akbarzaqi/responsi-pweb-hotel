@@ -83,6 +83,8 @@
             $pindah = preg_replace("/;/", "", $isi );
             $pisah = explode("|", $isi);
 
+            
+
             echo "<div class='card-room'>
             <img src='http://localhost/joki-arvin/images/lux.jpg' alt='' />
             <div class='title' style='margin-top: 8px;'> $pisah[0] </div>

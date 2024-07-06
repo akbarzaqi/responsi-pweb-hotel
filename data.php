@@ -38,6 +38,52 @@
     <section>
       <div class="room">Data Reservasi</div>
     </section>
+    <div class="kamar-tersedia" style="margin-left: 100px; padding: 20px 10px 20px 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); width: 200px; text-align: center; margin-bottom: 10px">
+      <div class="text" style="font-weight: bold; font-size: 20px">kamar tersedia</div>
+      <?php 
+        $fp = fopen("file.txt", "a+");
+        $open = fopen("dataReservasi.txt", "a+");
+        $show = "jumlahKamar.txt";
+        $isi = fgets($fp, 80);
+        $fill = fgets($open, 80);
+        $pisah = explode(";", $isi);
+        
+        $rawr = 1;
+        $count = 1;
+        while(!feof($fp)) 
+        {
+            $isi = fgets($fp);
+            $rawr++;
+        }
+        while(!feof($open)) {
+            $fill = fgets($open);
+            $count++;
+        }
+        
+        $total_room = $rawr - $count;
+
+        // Writing the total number of rooms to the file
+        $file = fopen($show, "w");
+        if ($file) {
+            fputs($file, "$total_room\n");
+            fclose($file);
+        }
+
+        // Reading the last line of the file
+        $last_line = '';
+        if (file_exists($show)) {
+            $file = fopen($show, "r");
+            if ($file) {
+                while (($line = fgets($file)) !== false) {
+                    $last_line = $line;
+                }
+                fclose($file);
+            }
+        }
+
+        echo "<div class='text' style='font-size: 20px;'>" . htmlspecialchars(trim($last_line)) . "</div>";
+      ?>
+    </div>
     <section class="data-reservasi">
       <div class="container">
         <table border="1" align="center" width="100%">
