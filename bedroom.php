@@ -14,7 +14,7 @@
     <div class="container">
       <ul>
         <li class="logo">Sunshine Hotel</li>
-        <li><a class="nav-btn" href="index.php">Home</a></li>
+        <li><a class="nav-btn" href="home.php">Home</a></li>
         <li><a href="bedroom.php" class="nav-btn active">Bedroom</a></li>
         <li style="float: inline-end">
           <a href="data.php" class="nav-btn" style="
@@ -40,7 +40,7 @@
 
         // Menambahkan link ke reservasi.php dengan parameter nama hotel
         echo "<div class='card-room'>
-          <img src='http://localhost/joki-arvin/images/lux.jpg' alt='' />
+          <img src='http://localhost/responsi-pweb-hotel/images/lux.jpg' alt='' />
           <div class='title'>$pisah[0]</div>
           <div class='place'>$pisah[2]</div>
           <div class='price'>Rp.$pisah[3]</div>

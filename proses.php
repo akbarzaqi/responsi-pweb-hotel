@@ -22,5 +22,5 @@
     fputs($buka, "$id|$name|$email|$price|$location|$phone|$address|$checkin|$checkout|$hotel_name|$room_type\n");
     fclose($buka);
 
-    header("location:index.php");
+    header("location:home.php");
 ?>

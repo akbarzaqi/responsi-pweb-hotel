@@ -21,7 +21,7 @@
           <li><a href="add-room.php" class="nav-btn">Tambah Kamar</a></li>
           <li style="float: right;">
             <a
-              href="index.php"
+              href="home.php"
               class="nav-btn"
               style="
                 border-radius: 8px;

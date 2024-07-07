@@ -13,5 +13,5 @@
     fputs($buka, "$id|$name|$jenis|$price|$place\n");
     fclose($buka);
 
-    header("location:index.php");
+    header("location:home.php");
 ?>

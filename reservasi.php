@@ -44,7 +44,7 @@ if (isset($_GET['id'])) {
                     <div class="container">
                         <ul>
                             <li class="logo">Sunshine Hotel</li>
-                            <li><a class="nav-btn" href="index.php">Home</a></li>
+                            <li><a class="nav-btn" href="home.php">Home</a></li>
                             <li><a href="jadwal.php" class="nav-btn active">Bedroom</a></li>
                             <li style="float: inline-end">
                               <a href="data.php" class="nav-btn" style="border-radius: 8px; color: white; padding-left: 30px; padding-right: 30px; background-color: rgb(12, 138, 77);">Login</a>

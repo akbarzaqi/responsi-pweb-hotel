@@ -13,7 +13,7 @@
 <body>
     <section class="page-login d-none d-sm-block" style="margin-top: 150px;">
         <div class="container">
-            <form action="proses-login.php" name="form2" method="post" >
+            <form action="proses-registrasi.php" name="form2" method="post" >
                 <div class="row" style="gap: 100px; align-items: center">
                     <div class="col-12 col-lg-6">
                         <div class="title" style="font-size: 40px; font-weight: bold; color: #61048a">Sunshine Hotel</div>
@@ -21,11 +21,14 @@
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="card" style="padding: 40px 10px 40px 10px; border: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                            <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" class="form-control" style="margin-bottom: 20px;">
+                            <input type="text" name="alamat" id="alamat" placeholder="Alamat" class="form-control" style="margin-bottom: 20px;">
                             <input type="email" name="email" id="email" placeholder="Email" class="form-control" style="margin-bottom: 20px;">
                             <input type="password" name="password" id="password" placeholder="Password" class="form-control" style="margin-bottom: 20px;">
+
                             <input type="submit" value="Login" class="btn btn-primary">
                             <hr>
-                            <a href="registrasi.php" class="btn btn-success mt-3">Create New Account</a>
+                            <a href="registrasi.php" class="btn btn-success mt-3">Sign in</a>
                         </div>
                     </div>
                 </div>
@@ -33,25 +36,7 @@
         </div>
     </section>
 
+    
 
-     <section class="page-login d-xxl-none" style="margin-top: 10px;">
-        <div class="container">
-            <div class="row" style="gap: 100px; align-items: center">
-                <div class="col-12 col-lg-6">
-                    <div class="title" style="font-size: 40px; font-weight: bold; color: #61048a">Sunshine Hotel</div>
-                    <div class="subtitle" style="font-size: 21px; ">Temukan Kenyamanan dan Keanggunan di Setiap Sudut Hotel Kami, Di Mana Setiap Tamu Diperlakukan Seperti Raja</div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="card" style="padding: 40px 10px 40px 10px; border: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                        <input type="email" name="email" id="email" placeholder="Email" class="form-control" style="margin-bottom: 20px;">
-                        <input type="password" name="password" id="password" placeholder="Password" class="form-control" style="margin-bottom: 20px;">
-                        <input type="submit" value="Login" class="btn btn-primary">
-                        <hr>
-                        <a href="registrasi.php" class="btn btn-success mt-3">Create New Account</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
 </html>
