@@ -164,22 +164,7 @@ if (isset($_GET['id'])) {
                     </div>
                   </section>
             </body>
-            <script>
-              const checkReservasi = () => {
-                var name = (document.form1.address.value);
-                 var email = (document.form1.email.value);
-                  var phone = (document.form1.phone.value);
-                   var address = (document.form1.address.value);
-                    var checkin = (document.form1.checkin.value);
-                     var checkout = (document.form1.checkout.value);
-                  
-                if(name == "" || email == "" || phone == "" || address == "" || checkin == "" || checkout == "") 
-                  alert("Data tidak boleh kosong");
-                else {
-                  alert("Data berhasil ditambahkan");
-                }
-              }
-            </script>
+            <script src="script/script.js"></script>
             </html>
             <?php
         } 

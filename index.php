@@ -21,8 +21,8 @@
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="card" style="padding: 40px 10px 40px 10px; border: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-                            <input type="email" name="email" id="email" placeholder="Email" class="form-control" style="margin-bottom: 20px;">
-                            <input type="password" name="password" id="password" placeholder="Password" class="form-control" style="margin-bottom: 20px;">
+                            <input type="email" name="email" id="email" placeholder="Email" class="form-control" style="margin-bottom: 20px;" required>
+                            <input type="password" name="password" id="password" placeholder="Password" class="form-control" style="margin-bottom: 20px;" required>
                             <input type="submit" value="Login" class="btn btn-primary">
                             <hr>
                             <a href="registrasi.php" class="btn btn-success mt-3">Create New Account</a>

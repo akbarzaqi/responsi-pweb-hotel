@@ -86,20 +86,5 @@
       </form>
     </section>
   </body>
-  <script>
-      const check = () => {
-        var id = (document.form1.id.value);
-        var name = (document.form1.name.value);
-        var jenis = (document.form1.jenis.value);
-        var price = (document.form1.price.value);
-        var place = (document.form1.place.value);
-
-        if(id == "" || name == "" || jenis == "" || price == "" || place == "") {
-          alert("Data tidak boleh kosong");
-        }else {
-          alert("Data berhasil ditambahkan");
-        }
-        
-      }
-  </script>
+  <script src="script/script.js"></script>
 </html>

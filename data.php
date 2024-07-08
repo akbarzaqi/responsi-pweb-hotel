@@ -49,7 +49,7 @@
         $pisah = explode(";", $isi);
         
         $rawr = 1;
-        $count = 1;
+        $count = 0;
         while(!feof($fp)) 
         {
             $isi = fgets($fp);
