@@ -65,7 +65,7 @@ if (isset($_GET['id'])) {
                   >
                     <div class="data" style="width: 500px">
                       <img
-                        src="http://localhost/joki-arvin/images/lux.jpg"
+                        src="http://localhost/responsi-pweb-hotel/images/lux.jpg"
                         alt=""
                         style="width: 500px; border-radius: 10px"
                       />
